@@ -64,7 +64,12 @@
         font-size: 1.00rem;
         font-weight: bold;
       }
-
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: serif;
+      }
       article h1+h4:first-of-type {
         margin-block-start: 0rem;
       }
@@ -110,11 +115,28 @@
         background: var(--small-text-color);
       }
 
+       pre,
+      code,
+      kbd,
+      samp {
+        font-family: monospace, monospace;
+      }
+
       code {
+        overflow-wrap: break-word;
         background: var(--transparent);
-        border-radius: .1875rem;
-        /* padding: .0625rem .1875rem; */
-        /* margin: 0 .1875rem; */
+        border-radius: 5px;
+      }
+
+      pre {
+        font-size: 95%;
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      pre>code {
+        white-space: pre-wrap;
       }
 
       small {
