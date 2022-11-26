@@ -8,7 +8,7 @@
     <copyright>CC 1.0</copyright>
     <ttl>60</ttl>
 <item>
-  <pubDate>2022/06/23 23:24:48 CST</pubDate>
+  <pubDate>2022/06/23 18:09:22 CST</pubDate>
   <category>2022/06/23</category>
   <title>MARKDOWN TEST</title>
   <link>https://ityspace.github.io/posts/chat.html</link>
@@ -32,18 +32,6 @@ Test! Test! Test! Test! Test!
   </description>
   <author>unknown</author>
   <guid>https://ityspace.github.io/posts/chat.html</guid>
-  </item>
-<item>
-  <pubDate>2022/11/25 23:24:48 CST</pubDate>
-  <category>2022/11/25</category>
-  <title>Boring</title>
-  <link>https://ityspace.github.io/posts/me.html</link>
-  <description>
-    <![CDATA[
-<pre style='border: 0; white-space: pre-wrap; word-break: break-word;'>很无聊，写这个博文。</pre>]]>
-  </description>
-  <author>unknown</author>
-  <guid>https://ityspace.github.io/posts/me.html</guid>
   </item>
   </channel>
 </rss>
