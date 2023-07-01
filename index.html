@@ -1,204 +1,115 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang=en>
   <head>
-    <title>ITY's Space</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Description" >
-    <meta name="author" content="Unknown">
-    <link rel="canonical" href="https://yoursdomain">
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width">
+    <meta name="description" content="Hole of ITY">
+    <title>ITY's HomePage</title>
     <style>
       :root {
-        --text-color: black;
-        --bg-color: white;
-        --transparent: rgba(0, 0, 0, .15);
-        --small-text-color: rgba(0, 0, 0, .65);
+        --default-text-color: #333;
+        --default-background-color: #fff;
+        --logo: #333;
+        --red: #da7575;
+        --blue: #75b7da;
       }
 
       @media (prefers-color-scheme: dark) {
         :root {
-          --text-color: white;
-          --bg-color: #1b1b1b;
-          --transparent: rgba(255, 255, 255, .15);
-          --small-text-color: rgba(255, 255, 255, .45);
+          --default-text-color: #e6edf3;
+          --default-background-color: #0d1117;
+          --logo: #c2d5f3;
+          --red: #f3c2c2;
+          --blue: #c2d5f3;
         }
       }
 
+      html {
+        height: 100%;
+        font-size: 16px;
+        font-family: "ui-monospace", "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace
+      }
+
       body {
-        line-height: 1.6;
-        font-size: 18px;
-        font-family: sans-serif;
-        background: var(--bg-color);
-        color: var(--text-color);
-        padding-left: calc(100vw - 100%);
+        max-width: 80ch;
+        margin: 1rem auto;
+        padding: 0 2rem 2rem 2rem;
+        background: var(--default-background-color);
+        color: var(--default-text-color);
       }
 
-      h1 {
-        margin-block-start: 0.67rem;
-        margin-block-end: 0.67rem;
-        font-size: 2.00rem;
+      .logo {
         font-weight: bold;
+        color: var(--logo);
       }
 
-      article h1:first-of-type {
-        margin-block-start: 1.67rem;
+      .white {
+        color: #fff;
       }
 
-      h2 {
-        margin-block-start: 0.83rem;
-        margin-block-end: 0.83rem;
-        font-size: 1.50rem;
-        font-weight: bold;
+      .blue {
+        color: var(--blue);
       }
 
-      h3 {
-        margin-block-start: 1rem;
-        margin-block-end: 1rem;
-        font-size: 1.17em;
-        font-weight: bold;
-      }
-
-      h4 {
-        margin-block-start: 1.33rem;
-        margin-block-end: 1.33rem;
-        font-size: 1.00rem;
-        font-weight: bold;
-      }
-
-      article h1+h4:first-of-type {
-        margin-block-start: 0rem;
-      }
-
-      h5 {
-        margin-block-start: 1.67rem;
-        margin-block-end: 1.67rem;
-        font-size: 0.83rem;
-        font-weight: bold;
-      }
-
-      h6 {
-        margin-block-start: 2.33rem;
-        margin-block-end: 2.33rem;
-        font-size: 0.67rem;
-        font-weight: bold;
-      }
-
-      a {
-        color: var(--text-color);
-      }
-
-      a:hover {
-        background: var(--transparent);
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      blockquote {
-        color: var(--small-text-color);
-        border-left: 3px solid var(--transparent);
-        padding: 0 1rem;
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-      hr {
-        border: none;
-        height: 1px;
-        background: var(--small-text-color);
-      }
-
-      pre, code, kbd, samp { font-family: monospace, monospace; }
-code { overflow-wrap: break-word; background: var(--transparent); border-radius: 5px; }
-pre { font-size: 95%; white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-pre>code { white-space: pre-wrap; }
-
-      small {
-        font-size: .95rem;
-        color: var(--small-text-color);
-      }
-
-      .header ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-
-      .header li {
-        display: inline;
-        font-size: 1.2rem;
-        margin-right: 1.2rem;
-      }
-
-      .container {
-        margin: 2.5rem auto;
-        width: 90%;
-        max-width: 60ch;
-      }
-
-      .postlistdiv ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-
-      .footer {
-        color: var(--small-text-color);
+      .red {
+        color: var(--red);
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./archive.html">Archive</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="./feed.xml">RSS</a>
-          </li>
-        </ul>
-      </header>
-      <article class="content">
-<img src="./imgsrv.svg" alt="SVG">
-<h1>Terminal/Blog
-</h1>
-<h4>快速使用
-</h4>
-<pre>
-<code>git clone https://github.com/ityspace/TerminalBlog
-</code>
-</pre>
-<pre>
-<code>cd TerminalBlog
-</code>
-</pre>
-<pre>
-<code>make
-</code>
-</pre>
-<h4>创建文章
-</h4>
-<pre>
-<code>make post
-</code>
-</pre>
-<h4>在浏览器中预览
-</h4>
-<pre>
-<code>make serve
-</code>
-</pre>
-<p>TerminalBlog 是一个基于 ShellScript 的博客生成器，运行时不需要任何依赖包。
-</p>
-<p>
-  <small>CC0 1.0 Universal</small>
-</p>
-  </article><footer class="footer">
-  <hr>
-  <p>This blog is written by <a href="https://ityspace.github.io">ITY</a>, Open <a href="https://github.com/ityspace/TerminalBlog">Source</a></p><p>Moe ICP<a href="https://icp.gov.moe/?keyword=20223005"> 20223050</a></p></footer></div></body></html>
+    <pre class="logo">
+						<code>
+                                                                                                
+                                                                                          
+                                      .-            :                                     
+                                        =         .-                                      
+                                         =       .:                                       
+                          .               =:    -:               .                        
+                           =.              :-  =               .-                         
+                            -               -++               ::                          
+                             -:           .::--::.           :.                           
+                              :=       :--.      .--:       =.                            
+                               :-   ---.            .--:   =                              
+                      ....::::::++::                   .::+-:.........                    
+                                 #                        =                               
+                                 #                        =                               
+                                 #                        =                               
+                                 #                        =                               
+                                 #                        =                               
+                                 #                        =                               
+                     .:-::::::::-%.                      .*::::::---:..                   
+                                +::--                 .-=:=-                              
+                               =.    :---         :---.    -=                             
+                             .*.         -==.  -==.         .+                            
+                             =              :#*              .+                           
+                           .:               +:--              .+.                         
+                          :.               +   :+               -.                        
+                                         .*.    .+                                        
+                                        .-        =                                       
+                                       ::          -.                                     
+                                      .             .                                     
+                                                                                          
+
+      </code>
+					</pre>
+    <h2>づWelcome to my website!</h2>
+    <p>My nickname is ITY. I am a student born in Anhui, China. I'm a computer lover and like to explore unknown domain. I believe liberalism and minimalism. It's my wish to discover the unknown. </p>
+    <p>When I was in elementary school, I like to root phone and flash into a more tiny system through proprietary software. From that time, I discovered the fun of software. When I had a MI 6 to flash into AOSP-like system, I became a minimalist. Then I liked the Google's Material design. When I studied how to build website, I always prefer to a minimal and unique design. Dreaming to become a hacker but don't really enough to Maths and computer science. But I'm towarding to my way. </p>
+    <p>Until now, I'm a <code class="red">Free Software</code> supporter. I dream of a world where all software is free. So it's the main reason of using <code class="blue">Linux, LineageOS, NeoVim, IRC, Matrix...</code>
+    </p>
+    <a href="https://blog.ity.moe">
+      <button>My blog</button>
+    </a>
+    <a href="https://ity.moe/friends">
+      <button>My friends</button>
+    </a>
+    <a href="https://ity.moe/projects">
+      <button>My projects</button>
+    </a>
+    <h1> Contact Me </h1>
+    <p>Email: <a class="blue" href="mailto:admin@ity.moe">admin@ity.moe</a>
+    <p>
+    <p>SourceHut: <a class="blue" href="https://sr.ht/~ity">~ity</a>
+    </p>
+  </body>
+  <html>
